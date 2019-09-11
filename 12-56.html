@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function laiXuat () {
+        let tienGui = Number(prompt("nhap so tien gui ngan hang"));
+        let soNgayGuiTien = Number(prompt("nhap so ngay gui tien:"));
+        let laiXuatMotNam = 0.5;
+        let result = tienGui * laiXuatMotNam * soNgayGuiTien / 360;
+        if (tienGui < 0){
+            alert("khong co tien gui");
+        } else {
+            alert( "so tien lai sau " + soNgayGuiTien + " ngay la : " + result + " VND");
+        }
+    }
+    laiXuat();
+</script>
+</body>
+</html>

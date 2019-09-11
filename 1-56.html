@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Độ C sang độ F :</legend>
+        Độ C<input type="text" id="doC">
+        <button type="button" onclick="demo()">ketqua</button>
+        <div id="ketqua"></div>
+        <script>
+            function demo(){
+                let doC = document.getElementById("doC").value;
+                doF = doC *18000 + 32.00;
+                document.getElementById("ketqua").innerHTML = "Độ F " + doF;
+            }
+        </script>
+
+    </fieldset>
+    <form>
+        <fieldset>
+            <legend>Đổi giữa Feed sang Meet</legend>
+            Feed  <input type="text" id="met">
+            <button type="button" onclick="feetMeet()">Kết quả</button>
+            <div id="ketqua1"></div>
+            <script>
+                function feetMeet() {
+                    let met = document.getElementById("met").value;
+                    feet = met * 3.2808;
+                    document.getElementById("ketqua1").innerHTML = "Feet" + feet;
+                }
+            </script>
+        </fieldset>
+    </form>
+</form>
+<form>
+    <fieldset>
+        <legend>Tính tích diện tích hình vuông</legend>
+        <input type="text" id="canh">
+        <button type="button" onclick="demo3()">kếtquả3</button>
+        <div id="ketqua3"></div>
+        <script>
+            function demo3() {
+                let canh = document.getElementById("canh").value;
+                dientich = canh * canh;
+                document.getElementById("ketqua3").innerHTML = "Tích là :" + dientich;
+            }
+        </script>
+    </fieldset>
+
+</form>
+<form>
+    <fieldset>
+        <legend>Tính diện tích hình chữ nhật</legend>
+        Chiều dài  <input type="text" id="chieudai">
+        Chiều rộng  <input type="text" id="chieurong"> <br>
+        <button type="button" onclick="demo4()">Kết quả</button>
+        <div id="ketqua4"></div>
+        <script>
+            function demo4() {
+                let chieudai = document.getElementById("chieudai").value;
+                let chieurong = document.getElementById("chieurong").value;
+                dientich = chieudai * chieurong;
+                document.getElementById("ketqua4").innerHTML = "Diện tích là" + dientich;
+            }
+
+        </script>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>Tính diện tích tam giác vuông</legend>
+        Cạnh góc vuông 1<input type="text" id="canh1">
+        Cạnh góc vuông 2<input type="text" id="canh2"> <br>
+        <button type="button" onclick="demo5()">kết quả</button>
+        <div id="ketqua5"></div>
+        <script>
+            function demo5() {
+                let canh1 = document.getElementById("canh1").value;
+                let canh2 = document.getElementById("canh2").value;
+                dientich = canh1 * canh2 ;
+                document.getElementById("ketqua5").innerHTML = "Diện tích tam giác vuông là" + dientich;
+            }
+        </script>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>giải phương trình bậc 1</legend>
+        <input type="text" id="giatria">
+        <input type="text" id="giatrib">
+        <button type="button" onclick="demo6()">Kết quả</button>
+        <div id="ketqua6"></div>
+        <script>
+function demo6() {
+    let a = document.getElementById("giatria").value;
+    let b = document.getElementById("giatrib").value;
+    bien = -b / a;
+    document.getElementById("ketqua6").innerHTML = "Phương trình bằng" + bien;
+}
+        </script>
+    </fieldset>
+</form>
+</body>
+</html>

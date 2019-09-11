@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ A<input type="number" id="bien1"> <br>
+B<input type="number" id="bien2"> <br>
+C<input type="number" id="bien3"> <br>
+<button type="button" onclick="demo()">kết quả</button>
+<div id="ketqua"></div>
+<script>
+function demo() {
+    let giatri1 = document.getElementById("bien1").value;
+    let giatri2 = document.getElementById("bien2").value;
+    let giatri3 = document.getElementById("bien3").value;
+    denta = ((giatri2 * 2)- (4 * giatri1 * giatri3));
+ //không có nghiệm
+    if (denta < 0){
+      document.getElementById("ketqua").innerHTML = "phương trình vô nghiệm"
+  } else if(denta == 0){
+      return denta = -giatri2/2*giatri1;
+      document.getElementById("ketqua").innerHTML = "phương trình có nghiệm nghiệm kép" + denta;
+  }
+}
+</script>
+</body>
+</html>

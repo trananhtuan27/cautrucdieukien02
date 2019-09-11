@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function triangle(numberA,numberB,numberC) {
+        if (checkTriangle(numberA,numberB,numberC)) {
+            alert("ok, this is triangle");
+        } else {
+            alert(" this is not triangle");
+        }
+    }
+    function checkTriangle(numberA,numberB,numberC) {
+        if (numberA <= 0 || numberB <= 0 || numberC <= 0) {
+            return false;
+        }
+        if (numberA + numberB < numberC
+            || numberA + numberC < numberB
+            || numberB + numberC < numberA) {
+            return  false;
+        }
+        return  true;
+    }
+    let numberA = Number(prompt("Enter the number a:"));
+    let numberB = Number(prompt("Enter the number b:"));
+    let numberC = Number(prompt("Enter the number c:"));
+    let result = triangle(numberA,numberB,numberC);
+</script>
+</body>
+</html>

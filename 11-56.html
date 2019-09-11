@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let muc1 =10000000;
+    function personalTax() {
+        let numberMoney = Number(prompt(" Emter your income:"));
+        let tax =  0.15;
+        if (numberMoney >= muc1){
+            let moneyAfterTax = numberMoney - numberMoney * tax;
+            alert(" thu nhập sau thuế là: " + moneyAfterTax);
+        } else {
+            alert(" thu nhập của bạn " + numberMoney + " nên không phải đóng thuế");
+        }
+    }  personalTax();
+</script>
+</body>
+</html>

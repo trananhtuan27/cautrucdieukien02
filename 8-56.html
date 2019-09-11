@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="giatri">
+<button type="button" onclick="demo2()">Kết quả</button>
+<div id="ketqua"></div>
+<script>
+    function demo2() {
+        let tuoi = document.getElementById("giatri").value;
+        if (tuoi > 0 && tuoi < 120) {
+            document.getElementById("ketqua").innerHTML = tuoi + " là tuổi của người"
+        } else {
+            document.getElementById("ketqua").innerHTML = "không phải là tuổi của người"
+        }
+    }
+</script>
+</body>
+</html>
